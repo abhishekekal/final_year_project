@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1093509494120",
+    "firebase_url": "https://virtual-try-on-clothes-default-rtdb.firebaseio.com",
+    "project_id": "virtual-try-on-clothes",
+    "storage_bucket": "virtual-try-on-clothes.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1093509494120:android:45ef805654440549f752dd",
+        "android_client_info": {
+          "package_name": "com.example.test"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSPj07wel2vQlhK46NYo0Y626EirQoovM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="@drawable/custom_background"
+    android:layout_margin="5dp"
+    android:id="@+id/LinearLayoutItem">
+
+    <ImageView
+        android:id="@+id/cart_product_image"
+        android:layout_height="90dp"
+        android:layout_width="80dp"
+        android:layout_margin="5dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/cart_product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Urban Fashion"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/idProductName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Rakesh"
+            android:textColor="#808080"
+            android:textSize="12sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/cart_product_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="₹1500"
+            android:textColor="#FF0000"
+            android:textSize="11sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/button_delete"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/delete_icon"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+</LinearLayout>

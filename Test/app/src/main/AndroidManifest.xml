@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/menu_logo"
+        android:label="Trial Room"
+        android:roundIcon="@drawable/menu_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Base.Theme.Test"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".BottomOrUpperSelectionActivity"
+            android:exported="false"
+            android:label="@string/title_activity_bottom_or_upper_selection"
+            android:theme="@style/Base.Theme.Test" />
+        <activity
+            android:name=".GenderSelection"
+            android:exported="false"
+            android:label="@string/title_activity_gender_selection"
+            android:theme="@style/Base.Theme.Test.NoActionBar" />
+        <activity
+            android:name=".ProductsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_products"
+            android:theme="@style/Base.Theme.Test" />
+        <activity
+            android:name=".ui.login.SignUpActivity"
+            android:exported="false"
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".LandingActivity"
+            android:exported="false"
+            android:label="@string/title_activity_landing" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Test">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.test.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/fileprovider" />
+        </provider>
+    </application>
+
+</manifest>
